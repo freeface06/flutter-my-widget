@@ -3,7 +3,11 @@ import 'package:widgets/widgets/AlertDialogPage.dart';
 import 'package:widgets/widgets/AnimatedContainerPage.dart';
 import 'package:widgets/widgets/AnimatedGridPage.dart';
 import 'package:widgets/widgets/AnimatedListPage.dart';
+import 'package:widgets/widgets/BottomAppBarPage.dart';
+import 'package:widgets/widgets/BottomNavigationBarPage.dart';
 import 'package:widgets/widgets/CardPage.dart';
+import 'package:widgets/widgets/CheckBoxListTilePage.dart';
+import 'package:widgets/widgets/ColorFilteredPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -193,6 +197,163 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     Expanded(
                         child: Image.asset('assets/images/alertdialog.jpg')),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          InkWell(
+            splashColor: Colors.deepPurpleAccent,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const BottomAppBarPage()),
+              );
+            },
+            child: Card(
+              child: SizedBox(
+                width: 350,
+                height: 350,
+                child: Column(
+                  children: <Widget>[
+                    const SizedBox(
+                      height: 50,
+                      child: Center(
+                          child: Text("BottomAppBar",
+                              style: TextStyle(
+                                color: Colors.deepPurple,
+                                fontWeight: FontWeight.bold,
+                              ))),
+                    ),
+                    Expanded(
+                        child: Image.asset('assets/images/bottomappbar.jpg')),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          InkWell(
+            splashColor: Colors.deepPurpleAccent,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const AlertDialogPage()),
+              );
+            },
+            child: Card(
+              child: SizedBox(
+                width: 350,
+                height: 350,
+                child: Column(
+                  children: <Widget>[
+                    const SizedBox(
+                      height: 50,
+                      child: Center(
+                          child: Text("AlertDiallog",
+                              style: TextStyle(
+                                color: Colors.deepPurple,
+                                fontWeight: FontWeight.bold,
+                              ))),
+                    ),
+                    Expanded(
+                        child: Image.asset('assets/images/alertdialog.jpg')),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          InkWell(
+            splashColor: Colors.deepPurpleAccent,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const BottomNavigationBarPage()),
+              );
+            },
+            child: Card(
+              child: SizedBox(
+                width: 350,
+                height: 350,
+                child: Column(
+                  children: <Widget>[
+                    const SizedBox(
+                      height: 50,
+                      child: Center(
+                          child: Text("BottomNavigationBar",
+                              style: TextStyle(
+                                color: Colors.deepPurple,
+                                fontWeight: FontWeight.bold,
+                              ))),
+                    ),
+                    Expanded(
+                        child: Image.asset(
+                            'assets/images/bottomnavigationbar.jpg')),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          InkWell(
+            splashColor: Colors.deepPurpleAccent,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const CheckBoxListTilePage()),
+              );
+            },
+            child: Card(
+              child: SizedBox(
+                width: 350,
+                height: 350,
+                child: Column(
+                  children: <Widget>[
+                    const SizedBox(
+                      height: 50,
+                      child: Center(
+                          child: Text("CheckBoxListTile",
+                              style: TextStyle(
+                                color: Colors.deepPurple,
+                                fontWeight: FontWeight.bold,
+                              ))),
+                    ),
+                    Expanded(
+                        child:
+                            Image.asset('assets/images/checkboxlisttile.jpg')),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          InkWell(
+            splashColor: Colors.deepPurpleAccent,
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => const ColorFilteredPage()),
+              );
+            },
+            child: Card(
+              child: SizedBox(
+                width: 350,
+                height: 350,
+                child: Column(
+                  children: <Widget>[
+                    const SizedBox(
+                      height: 50,
+                      child: Center(
+                          child: Text("ColorFiltered",
+                              style: TextStyle(
+                                color: Colors.deepPurple,
+                                fontWeight: FontWeight.bold,
+                              ))),
+                    ),
+                    Expanded(
+                        child: Image.asset('assets/images/colorfiltered.jpg')),
                   ],
                 ),
               ),
