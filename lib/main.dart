@@ -54,539 +54,82 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: null,
       body: SafeArea(
         child: ListView(
-          children: <Widget>[
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const CardPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("Card",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(child: Image.asset('assets/images/card.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const AnimatedListPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("AnimatedList",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset('assets/images/animatedlist.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const AnimatedContainerPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("AnimatedContainer",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset(
-                              'assets/images/animatedcontainer.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const AnimatedGridPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("AnimatedGrid",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset('assets/images/animatedgrid.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const AlertDialogPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("AlertDiallog",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset('assets/images/alertdialog.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BottomAppBarPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("BottomAppBar",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset('assets/images/bottomappbar.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const BottomNavigationBarPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("BottomNavigationBar",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset(
-                              'assets/images/bottomnavigationbar.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const CheckBoxListTilePage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("CheckBoxListTile",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset(
-                              'assets/images/checkboxlisttile.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const ColorFilteredPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("ColorFiltered",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child:
-                              Image.asset('assets/images/colorfiltered.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const DataTablePage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("DataTable",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset('assets/images/datatable.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const DataTableCheckBoxPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("DataTableCheckBox",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset(
-                              'assets/images/datatablecheckbox.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const DraggablePage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("Draggable",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset('assets/images/draggable.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const DrawerPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("Drawer",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(child: Image.asset('assets/images/drawer.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const DropdownButtonPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("DropDownButton",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child:
-                              Image.asset('assets/images/dropdownbutton.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const DropdownMenuPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("DropDownMenu",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child: Image.asset('assets/images/dropdownmenu.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const ElevatedButtonPage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("ElevatedButton",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child:
-                              Image.asset('assets/images/elevatedbutton.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            InkWell(
-              splashColor: Colors.deepPurpleAccent,
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (context) => const ExpansionTilePage()),
-                );
-              },
-              child: Card(
-                child: SizedBox(
-                  width: 350,
-                  height: 350,
-                  child: Column(
-                    children: <Widget>[
-                      const SizedBox(
-                        height: 50,
-                        child: Center(
-                            child: Text("ExpansionTile",
-                                style: TextStyle(
-                                  color: Colors.deepPurple,
-                                  fontWeight: FontWeight.bold,
-                                ))),
-                      ),
-                      Expanded(
-                          child:
-                              Image.asset('assets/images/expansiontile.jpg')),
-                    ],
-                  ),
-                ),
-              ),
-            ),
+          children: const <Widget>[
+            NewWidget('assets/images/card.jpg', 'Card', CardPage()),
+            NewWidget('assets/images/animatedlist.jpg', 'AnimatedList',
+                AnimatedListPage()),
+            NewWidget('assets/images/animatedcontainer.jpg',
+                'AnimatedContainer', AnimatedContainerPage()),
+            NewWidget('assets/images/animatedgrid.jpg', 'AnimatedGrid',
+                AnimatedGridPage()),
+            NewWidget('assets/images/alertdialog.jpg', 'AlertDiallog',
+                AlertDialogPage()),
+            NewWidget('assets/images/bottomappbar.jpg', 'BottomAppBar',
+                BottomAppBarPage()),
+            NewWidget('assets/images/bottomnavigationbar.jpg',
+                'BottomNavigationBar', BottomNavigationBarPage()),
+            NewWidget('assets/images/checkboxlisttile.jpg', 'CheckBoxListTile',
+                CheckBoxListTilePage()),
+            NewWidget('assets/images/colorfiltered.jpg', 'ColorFiltered',
+                ColorFilteredPage()),
+            NewWidget(
+                'assets/images/datatable.jpg', 'DataTable', DataTablePage()),
+            NewWidget('assets/images/datatablecheckbox.jpg',
+                'DataTableCheckBox', DataTableCheckBoxPage()),
+            NewWidget(
+                'assets/images/draggable.jpg', 'Draggable', DraggablePage()),
+            NewWidget('assets/images/drawer.jpg', 'Drawer', DrawerPage()),
+            NewWidget('assets/images/dropdownbutton.jpg', 'DropDownButton',
+                DropdownButtonPage()),
+            NewWidget('assets/images/dropdownmenu.jpg', 'DropDownMenu',
+                DropdownMenuPage()),
+            NewWidget('assets/images/elevatedbutton.jpg', 'ElevatedButton',
+                ElevatedButtonPage()),
+            NewWidget('assets/images/expansiontile.jpg', 'ExpansionTile',
+                ExpansionTilePage()),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class NewWidget extends StatelessWidget {
+  final String img;
+  final String appName;
+  final Widget view;
+
+  const NewWidget(this.img, this.appName, this.view, {Key? key})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      splashColor: Colors.deepPurpleAccent,
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => view),
+        );
+      },
+      child: Card(
+        child: SizedBox(
+          width: 350,
+          height: 350,
+          child: Column(
+            children: <Widget>[
+              SizedBox(
+                height: 50,
+                child: Center(
+                    child: Text(appName,
+                        style: const TextStyle(
+                          color: Colors.deepPurple,
+                          fontWeight: FontWeight.bold,
+                        ))),
+              ),
+              Expanded(child: Image.asset(img)),
+            ],
+          ),
         ),
       ),
     );
