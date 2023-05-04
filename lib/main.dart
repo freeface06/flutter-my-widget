@@ -16,6 +16,7 @@ import 'package:widgets/widgets/DropDownButtonPage.dart';
 import 'package:widgets/widgets/DropDownMenuPage.dart';
 import 'package:widgets/widgets/ElevatedButtonPage.dart';
 import 'package:widgets/widgets/ExpansionTilePage.dart';
+import 'package:widgets/widgets/FadeInImagePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -87,6 +87,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ElevatedButtonPage()),
             NewWidget('assets/images/expansiontile.jpg', 'ExpansionTile',
                 ExpansionTilePage()),
+            NewWidget('assets/images/fadeinimage.jpg', 'FadeInImage',
+                FadeInImagePage()),
           ],
         ),
       ),
