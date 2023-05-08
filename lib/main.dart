@@ -17,6 +17,7 @@ import 'package:widgets/widgets/DropDownMenuPage.dart';
 import 'package:widgets/widgets/ElevatedButtonPage.dart';
 import 'package:widgets/widgets/ExpansionTilePage.dart';
 import 'package:widgets/widgets/FadeInImagePage.dart';
+import 'package:widgets/widgets/FlowPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -89,6 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ExpansionTilePage()),
             NewWidget('assets/images/fadeinimage.jpg', 'FadeInImage',
                 FadeInImagePage()),
+            NewWidget('assets/images/flow.jpg', 'Flow', FlowPage()),
           ],
         ),
       ),
