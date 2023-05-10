@@ -18,6 +18,9 @@ import 'package:widgets/widgets/ElevatedButtonPage.dart';
 import 'package:widgets/widgets/ExpansionTilePage.dart';
 import 'package:widgets/widgets/FadeInImagePage.dart';
 import 'package:widgets/widgets/FlowPage.dart';
+import 'package:widgets/widgets/FocusPage.dart';
+import 'package:widgets/widgets/FocusableActionDetectorPage.dart';
+import 'package:widgets/widgets/FormPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -91,6 +94,10 @@ class _MyHomePageState extends State<MyHomePage> {
             NewWidget('assets/images/fadeinimage.jpg', 'FadeInImage',
                 FadeInImagePage()),
             NewWidget('assets/images/flow.jpg', 'Flow', FlowPage()),
+            NewWidget('assets/images/focus.jpg', 'Focus', FocusPage()),
+            NewWidget('assets/images/focusableactiondetector.jpg',
+                'FocusableActionDetector', FocusableActionDetectorPage()),
+            NewWidget('assets/images/form.jpg', 'Form', FormPage()),
           ],
         ),
       ),
