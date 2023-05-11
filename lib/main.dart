@@ -21,6 +21,9 @@ import 'package:widgets/widgets/FlowPage.dart';
 import 'package:widgets/widgets/FocusPage.dart';
 import 'package:widgets/widgets/FocusableActionDetectorPage.dart';
 import 'package:widgets/widgets/FormPage.dart';
+import 'package:widgets/widgets/FutureBuilderPage.dart';
+import 'package:widgets/widgets/GestureDetectorPage.dart';
+import 'package:widgets/widgets/HeroPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -98,6 +101,11 @@ class _MyHomePageState extends State<MyHomePage> {
             NewWidget('assets/images/focusableactiondetector.jpg',
                 'FocusableActionDetector', FocusableActionDetectorPage()),
             NewWidget('assets/images/form.jpg', 'Form', FormPage()),
+            NewWidget(
+                'assets/images/futurebuilder.jpg', 'FutureBuilder', FutureBuilderPage()),
+            NewWidget('assets/images/gesturedetector.jpg', 'GestureDetector',
+                GestureDetectorPage()),
+            NewWidget('assets/images/hero.jpg', 'Hero', HeroPage()),
           ],
         ),
       ),
