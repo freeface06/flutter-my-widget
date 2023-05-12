@@ -24,6 +24,7 @@ import 'package:widgets/widgets/FormPage.dart';
 import 'package:widgets/widgets/FutureBuilderPage.dart';
 import 'package:widgets/widgets/GestureDetectorPage.dart';
 import 'package:widgets/widgets/HeroPage.dart';
+import 'package:widgets/widgets/InheritedNotifierPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -106,6 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
             NewWidget('assets/images/gesturedetector.jpg', 'GestureDetector',
                 GestureDetectorPage()),
             NewWidget('assets/images/hero.jpg', 'Hero', HeroPage()),
+            NewWidget('assets/images/inheritednotifier.jpg', 'InheritedNotifier', InheritedNotifierPage()),
           ],
         ),
       ),
