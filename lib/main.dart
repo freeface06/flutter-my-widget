@@ -26,6 +26,7 @@ import 'package:widgets/widgets/GestureDetectorPage.dart';
 import 'package:widgets/widgets/HeroPage.dart';
 import 'package:widgets/widgets/InheritedNotifierPage.dart';
 import 'package:widgets/widgets/NestedScrollViewPage.dart';
+import 'package:widgets/widgets/NotificationPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -110,6 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
             NewWidget('assets/images/hero.jpg', 'Hero', HeroPage()),
             NewWidget('assets/images/inheritednotifier.jpg', 'InheritedNotifier', InheritedNotifierPage()),
             NewWidget('assets/images/nestedscrollview.jpg', 'NestedScrollView', NestedScrollViewPage()),
+            NewWidget('assets/images/notification.jpg', 'Notification', NotificationPage()),
           ],
         ),
       ),
