@@ -27,6 +27,7 @@ import 'package:widgets/widgets/HeroPage.dart';
 import 'package:widgets/widgets/InheritedNotifierPage.dart';
 import 'package:widgets/widgets/NestedScrollViewPage.dart';
 import 'package:widgets/widgets/NotificationPage.dart';
+import 'package:widgets/widgets/PopupRoutePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -104,14 +105,19 @@ class _MyHomePageState extends State<MyHomePage> {
             NewWidget('assets/images/focusableactiondetector.jpg',
                 'FocusableActionDetector', FocusableActionDetectorPage()),
             NewWidget('assets/images/form.jpg', 'Form', FormPage()),
-            NewWidget(
-                'assets/images/futurebuilder.jpg', 'FutureBuilder', FutureBuilderPage()),
+            NewWidget('assets/images/futurebuilder.jpg', 'FutureBuilder',
+                FutureBuilderPage()),
             NewWidget('assets/images/gesturedetector.jpg', 'GestureDetector',
                 GestureDetectorPage()),
             NewWidget('assets/images/hero.jpg', 'Hero', HeroPage()),
-            NewWidget('assets/images/inheritednotifier.jpg', 'InheritedNotifier', InheritedNotifierPage()),
-            NewWidget('assets/images/nestedscrollview.jpg', 'NestedScrollView', NestedScrollViewPage()),
-            NewWidget('assets/images/notification.jpg', 'Notification', NotificationPage()),
+            NewWidget('assets/images/inheritednotifier.jpg',
+                'InheritedNotifier', InheritedNotifierPage()),
+            NewWidget('assets/images/nestedscrollview.jpg', 'NestedScrollView',
+                NestedScrollViewPage()),
+            NewWidget('assets/images/notification.jpg', 'Notification',
+                NotificationPage()),
+            NewWidget(
+                'assets/images/popuproute.jpg', 'PopupRoute', PopupRoutePage()),
           ],
         ),
       ),
