@@ -28,6 +28,7 @@ import 'package:widgets/widgets/InheritedNotifierPage.dart';
 import 'package:widgets/widgets/NestedScrollViewPage.dart';
 import 'package:widgets/widgets/NotificationPage.dart';
 import 'package:widgets/widgets/PopupRoutePage.dart';
+import 'package:widgets/widgets/SlideTransitionPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -118,6 +119,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 NotificationPage()),
             NewWidget(
                 'assets/images/popuproute.jpg', 'PopupRoute', PopupRoutePage()),
+            NewWidget(
+                'assets/images/slidetransition.jpg', 'SlideTransition', SlideTransitionPage()),
           ],
         ),
       ),
