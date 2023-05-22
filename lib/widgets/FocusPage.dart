@@ -25,7 +25,6 @@ class FocusableText extends StatelessWidget {
 
   final String data;
 
-  /// Whether or not to focus this widget initially if nothing else is focused.
   final bool autofocus;
 
   @override
