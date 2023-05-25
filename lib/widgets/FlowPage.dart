@@ -7,10 +7,12 @@ class FlowPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        appBar: null,
-        body: FlowMenu(),
+    return const SafeArea(
+      child: MaterialApp(
+        home: Scaffold(
+          appBar: null,
+          body: FlowMenu(),
+        ),
       ),
     );
   }

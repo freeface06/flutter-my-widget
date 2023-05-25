@@ -9,11 +9,13 @@ class FormPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: _title,
-      home: Scaffold(
-        appBar: AppBar(title: const Text(_title)),
-        body: const MyStatefulWidget(),
+    return const SafeArea(
+      child: MaterialApp(
+        title: _title,
+        home: Scaffold(
+          appBar: null,
+          body: MyStatefulWidget(),
+        ),
       ),
     );
   }

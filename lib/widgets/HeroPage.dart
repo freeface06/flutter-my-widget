@@ -7,8 +7,10 @@ class HeroPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HeroExample(),
+    return const SafeArea(
+      child: MaterialApp(
+        home: HeroExample(),
+      ),
     );
   }
 }
@@ -19,7 +21,7 @@ class HeroExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Hero Sample')),
+      appBar: null,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[

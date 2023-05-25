@@ -7,11 +7,13 @@ class SliverFadeTransitionPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        appBar: null,
-        body: Center(
-          child: SliverFadeTransitionExample(),
+    return const SafeArea(
+      child: MaterialApp(
+        home: Scaffold(
+          appBar: null,
+          body: Center(
+            child: SliverFadeTransitionExample(),
+          ),
         ),
       ),
     );

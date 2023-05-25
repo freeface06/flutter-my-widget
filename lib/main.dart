@@ -31,6 +31,7 @@ import 'package:widgets/widgets/PopupRoutePage.dart';
 import 'package:widgets/widgets/SlideTransitionPage.dart';
 import 'package:widgets/widgets/SliverFadeTransitionPage.dart';
 import 'package:widgets/widgets/SliverOpacityPage.dart';
+import 'package:widgets/widgets/TweenAnimationBuilderPage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -127,6 +128,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 'assets/images/silverfadetransition.jpg', 'SliverFadeTransition', SliverFadeTransitionPage()),
             NewWidget(
                 'assets/images/sliveropacity.jpg', 'SliverOpacity', SliverOpacityPage()),
+            NewWidget(
+                'assets/images/tweenanimationbuilder.jpg', 'TweenAnimationBuilder', TweenAnimationBuilderPage()),
           ],
         ),
       ),
